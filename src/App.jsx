@@ -43,6 +43,22 @@ const App = () => {
     }
   };
 
+  const avancarFaixa = () => {
+    if(informacoesLivro.totalCapitulos === faixaAtual + 1) {
+      definirFaixaAtual(0)
+    }else{
+      definirFaixaAtual(faixaAtual + 1)
+    }
+  };
+
+  const retrocederFaixa = () => {
+    if(faixaAtual === 0) {
+      definirFaixaAtual(informacoesLivro.totalCapitulos - 1)
+    }else{
+      definirFaixaAtual(faixaAtual - 1)
+    }
+  };
+
 
 
   return  <>
@@ -63,6 +79,8 @@ const App = () => {
     <BotoesControle 
       taTocando={taTocando}
       tocarOuPausarFaixa={tocarOuPausarFaixa}
+      avancarFaixa={avancarFaixa}
+      retrocederFaixa={retrocederFaixa}
     />
   </>
 };

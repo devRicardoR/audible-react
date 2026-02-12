@@ -72,7 +72,7 @@ const App = () => {
   };
 
   const retroceder15s = () => {
-    tagAudio.current.currentTime += 15
+    tagAudio.current.currentTime -= 15
   };
 
   return (

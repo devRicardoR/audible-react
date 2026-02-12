@@ -8,8 +8,12 @@ const ContainerProgresso = (props) => {
     return (
         <section className="container-progresso">
             <div className="progresso-total">
-                <div className="progresso-atual"></div>
-                <div className="marcador-posicao"></div>
+                <div className="progresso-atual" style={{
+                    width: `${props.tempoAtualFaixa*100/props.tempoTotalFaixa}%`
+                }}></div>
+                <div className="marcador-posicao" style={{
+                    left: `${props.tempoAtualFaixa*100/props.tempoTotalFaixa}%`
+                }}></div>
             </div>
             <div className="metricas-tempo">
                 <p>{formatarTempo(props.tempoAtualFaixa)}</p>

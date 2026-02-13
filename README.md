@@ -1,16 +1,86 @@
-# React + Vite
+Audible React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto front-end desenvolvido em React, inspirado na interface e no funcionamento do Audible, com foco em reprodução de audiolivros, controle de capítulos e barra de progresso.
 
-Currently, two official plugins are available:
+Este projeto possui fins exclusivamente educacionais e não possui qualquer vínculo oficial com a Amazon ou Audible.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Descrição
 
-## React Compiler
+O Audible React é uma aplicação que simula um player de audiolivros. A interface permite visualizar a capa do livro, navegar entre capítulos, controlar a reprodução do áudio e acompanhar o progresso da faixa atual.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Funcionalidades
 
-## Expanding the ESLint configuration
+Reproduzir e pausar áudio
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Avançar e retroceder capítulos
+
+Avançar e voltar 15 segundos
+
+Barra de progresso interativa
+
+Exibição de capa e informações do livro
+
+Gerenciamento de capítulos de audiolivro
+
+Tecnologias Utilizadas
+
+React
+
+JavaScript (ES6+)
+
+CSS
+
+Bootstrap Icons
+
+Vite
+
+Estrutura do Projeto
+audible-react/
+├── src/
+│   ├── assets/
+│   │   ├── bras_cubas.jpg
+│   │   └── capitulos/
+│   ├── Capa.jsx
+│   ├── SeletorCapitulos.jsx
+│   ├── BotoesControle.jsx
+│   ├── GerenciadorFaixa.jsx
+│   ├── ContainerProgresso.jsx
+│   ├── App.jsx
+│   └── App.css
+├── package.json
+└── README.md
+
+Como Executar o Projeto
+
+Clonar o repositório:
+
+git clone https://github.com/seu-usuario/audible-react.git
+
+
+Acessar a pasta do projeto:
+
+cd audible-react
+
+
+Instalar as dependências:
+
+npm install
+
+
+Executar o projeto:
+
+npm run dev
+
+
+Acessar no navegador:
+
+http://localhost:5173
+
+Objetivo do Projeto
+
+Projeto desenvolvido para fins de estudo, com o objetivo de praticar conceitos fundamentais de React, como componentização, controle de estado, uso de hooks e manipulação de áudio no navegador.
+
+Autor
+
+Ricardo Cesar
+Projeto de estudo em React

@@ -1,7 +1,5 @@
 # Audible React
 
-Projeto front-end desenvolvido em React, inspirado na interface e no funcionamento do :contentReference[oaicite:0]{index=0}, com foco em reprodução de audiolivros, controle de capítulos e barra de progresso.
-
 Este projeto possui fins exclusivamente educacionais e não possui qualquer vínculo oficial com a Amazon ou Audible.
 
 ## Descrição
